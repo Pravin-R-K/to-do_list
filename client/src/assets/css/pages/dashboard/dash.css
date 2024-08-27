@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #568259;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-between {
+  justify-content: space-between;
+}
+
+.f-around {
+  justify-content: space-around;
+}
+
+.f-align-center {
+  align-items: center;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.page-container {
+  background-color: #ccfccb;
+  height: 100%;
+  width: 100%;
+}
+.page-container .welcome {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 50px;
+}
+.page-container .welcome span {
+  font-weight: bolder;
+  color: #568259;
+}
+.page-container .tasks {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  top: 9%;
+  left: 2%;
+}
+.page-container .tasks .task-container {
+  height: 28.5714285714%;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+.page-container .tasks .task-container:nth-child(1) {
+  background-color: #8be47d;
+}
+.page-container .tasks .task-container:nth-child(2) {
+  background-color: #ead464;
+}
+.page-container .tasks .task-container:nth-child(3) {
+  background-color: #d66270;
+}
+.page-container .tasks .task-container .task {
+  gap: 10px;
+  padding: 10px;
+  height: 100px;
+  width: 130px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.page-container .tasks .task-container .task.Pending {
+  background-color: aqua;
+}
+.page-container .tasks .task-container .task.On {
+  background-color: orchid;
+}
+.page-container .tasks .task-container .task .buttons {
+  gap: 10px;
+  justify-content: end;
+}
+.page-container .tasks .task-container .task .buttons img {
+  height: 25px;
+  cursor: pointer;
+}
+.page-container .add-task-container {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.page-container .add-task-container .add-form {
+  background-color: #96e6b3;
+}
+.page-container .add-task-container .add-form .close {
+  position: relative;
+  color: red;
+  top: 10px;
+  width: 80%;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: right;
+  cursor: pointer;
+}
+.page-container .add-task-container .add-form .inp select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.page-container .boxes {
+  position: absolute;
+  right: 1%;
+  top: 20%;
+  gap: 30px;
+}
+.page-container .boxes .box {
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  padding: 10px;
+  border: 2px solid #000;
+  font-weight: bold;
+}
+.page-container .boxes .box:nth-child(1) {
+  background-color: #8be47d;
+}
+.page-container .boxes .box:nth-child(2) {
+  background-color: #ead464;
+}
+.page-container .boxes .box:nth-child(3) {
+  background-color: #d66270;
+}
+.page-container .boxes .box:nth-child(4) {
+  background-color: aqua;
+}
+.page-container .boxes .box:nth-child(5) {
+  background-color: orchid;
+}
+.page-container .icons {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  gap: 25px;
+}
+.page-container .icons img {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  cursor: pointer;
+}/*# sourceMappingURL=dash.css.map */

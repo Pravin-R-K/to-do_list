@@ -1,0 +1,75 @@
+@import "../../global";
+
+.auth-container {
+    height: 100%;
+    .auth-form {
+        height: auto;
+        width: 20%;
+        background-color: $color3;
+        border: 2px solid $color2;
+        &:hover {
+            transition: 0.5s ease;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        .inp {
+            width: 85%;
+            gap: 10px;
+            label {
+                font-size: 20px;
+                .star {
+                    color: red;
+                }
+            }
+            input {
+                margin-bottom: 15px;
+                font-size: 18px;
+                padding: 10px;
+                outline: none;
+                &:focus {
+                    border: 2px solid $color2;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .auth-redirect {
+            margin-bottom: 20px;
+            width: 70%;
+            font-size: 18px;
+            .link {
+                text-decoration: none;
+                color: blue;
+                &:hover {
+                    transition: 0.5s ease;
+                    text-decoration: underline;
+                    color: $color6;
+                }
+            }
+        }
+        button {
+            border: none;
+            background-color: $color6;
+            color: $color1;
+            font-size: 18px;
+            padding: 7px;
+            margin-bottom: 20px;
+            display: block;
+            width: 80%;
+            cursor: pointer;
+            &:hover {
+                transition: 0.5s ease;
+                color: $color2;
+                background-color: $color5;
+                border: 1px solid $color2;
+                border-radius: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #568259;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-between {
+  justify-content: space-between;
+}
+
+.f-around {
+  justify-content: space-around;
+}
+
+.f-align-center {
+  align-items: center;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.auth-container {
+  height: 100%;
+}
+.auth-container .auth-form {
+  height: auto;
+  width: 20%;
+  background-color: #e5e5e5;
+  border: 2px solid #000;
+}
+.auth-container .auth-form:hover {
+  transition: 0.5s ease;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.auth-container .auth-form h2 {
+  font-size: 35px;
+}
+.auth-container .auth-form .inp {
+  width: 85%;
+  gap: 10px;
+}
+.auth-container .auth-form .inp label {
+  font-size: 20px;
+}
+.auth-container .auth-form .inp label .star {
+  color: red;
+}
+.auth-container .auth-form .inp input {
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+}
+.auth-container .auth-form .inp input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+.auth-container .auth-form .auth-redirect {
+  margin-bottom: 20px;
+  width: 70%;
+  font-size: 18px;
+}
+.auth-container .auth-form .auth-redirect .link {
+  text-decoration: none;
+  color: blue;
+}
+.auth-container .auth-form .auth-redirect .link:hover {
+  transition: 0.5s ease;
+  text-decoration: underline;
+  color: #568259;
+}
+.auth-container .auth-form button {
+  border: none;
+  background-color: #568259;
+  color: #fff;
+  font-size: 18px;
+  padding: 7px;
+  margin-bottom: 20px;
+  display: block;
+  width: 80%;
+  cursor: pointer;
+}
+.auth-container .auth-form button:hover {
+  transition: 0.5s ease;
+  color: #000;
+  background-color: #96e6b3;
+  border: 1px solid #000;
+  border-radius: 10px;
+}/*# sourceMappingURL=auth.css.map */

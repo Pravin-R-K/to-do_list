@@ -1,0 +1,131 @@
+@import "../../global";
+
+.page-container {
+    background-color: $color4;
+    height: 100%;
+    width: 100%;
+    .welcome {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: 50px;
+        span {
+            font-weight: bolder;
+            color: $color6;
+        }
+    }
+    .tasks {
+        position: relative;
+        height: 90%;
+        width: 90%;
+        top: 9%;
+        left: 2%;
+        .task-container {
+            height: calc(100% / 3.5);
+            border-radius: 10px;
+            border: 2px solid $color2;
+            &:nth-child(1) {
+                background-color: #8be47d;
+            }
+            &:nth-child(2) {
+                background-color: #ead464;
+            }
+            &:nth-child(3) {
+                background-color: #d66270;
+            }
+            .task {
+                gap: 10px;
+                padding: 10px;
+                height: 100px;
+                width: 130px;
+                border-radius: 10px;
+                margin: 10px;
+                &.Pending {
+                    background-color: aqua;
+                }
+                &.On {
+                    background-color: orchid;
+                }
+                .buttons {
+                    gap: 10px;
+                    justify-content: end;
+                    img {
+                        height: 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .add-task-container {
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        backdrop-filter: blur(3px);
+        .add-form {
+            background-color: $color5;
+            .close {
+                position: relative;
+                color: red;
+                top: 10px;
+                width: 80%;
+                font-size: 30px;
+                font-weight: bolder;
+                text-align: right;
+                cursor: pointer;
+            }
+            .inp {
+                select {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .boxes {
+        position: absolute;
+        right: 1%;
+        top: 20%;
+        gap: 30px;
+        .box {
+            text-align: center;
+            height: 50px;
+            width: 100px;
+            padding: 10px;
+            border: 2px solid $color2;
+            font-weight: bold;
+            &:nth-child(1) {
+                background-color: #8be47d;
+            }
+            &:nth-child(2) {
+                background-color: #ead464;
+            }
+            &:nth-child(3) {
+                background-color: #d66270;
+            }
+            &:nth-child(4) {
+                background-color: aqua;
+            }
+            &:nth-child(5) {
+                background-color: orchid;
+            }
+        }
+    }
+    .icons {
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+        gap: 25px;
+        img {
+            height: 75px;
+            width: 75px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    }
+}
